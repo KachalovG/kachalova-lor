@@ -1,14 +1,35 @@
 <template>
-  <header class="fixed top-0 left-0 w-full bg-primary shadow z-50">
-    <nav class="container mx-auto flex flex-wrap justify-center gap-4 py-4">
-      <router-link :to="{ path: '/', hash: '#main' }" class="text-surface text-sm md:text-base hover:text-accent">Главная</router-link>
-      <router-link :to="{ path: '/', hash: '#clinics' }" class="text-surface text-sm md:text-base hover:text-accent">Записаться</router-link>
-      <router-link :to="{ path: '/', hash: '#about' }" class="text-surface text-sm md:text-base hover:text-accent">О враче</router-link>
-      <router-link :to="{ path: '/', hash: '#footer' }" class="text-surface text-sm md:text-base hover:text-accent">Контакты</router-link>
+  <header class="bg-primary text-surface">
+    <div class="relative max-w-6xl mx-auto px-4 py-4">
+      <!-- Десктоп-нав -->
+      <nav class="hidden md:flex justify-center space-x-8">
+        <a href="#main" class="hover:text-accent transition">Главная</a>
+        <a href="#clinics" class="hover:text-accent transition">Клиники</a>
+        <a href="#about" class="hover:text-accent transition">Обо мне</a>
+      </nav>
+
+      <!-- Бургер-кнопка -->
+      <button
+        @click="isOpen = !isOpen"
+        class="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 text-2xl focus:outline-none"
+      >
+        <i :class="isOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
+      </button>
+    </div>
+
+    <!-- Моб. меню -->
+    <nav
+      v-if="isOpen"
+      class="md:hidden bg-primary text-center space-y-2 py-4"
+    >
+      <a href="#main" class="block hover:text-accent transition">Главная</a>
+      <a href="#clinics" class="block hover:text-accent transition">Клиники</a>
+      <a href="#about" class="block hover:text-accent transition">Обо мне</a>
     </nav>
   </header>
 </template>
 
 <script setup>
-
+import { ref } from 'vue';
+const isOpen = ref(false);
 </script>

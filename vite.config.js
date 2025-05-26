@@ -7,6 +7,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/kachalova-lor/",
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {
