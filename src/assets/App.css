@@ -21,6 +21,9 @@
 }
 
 @layer base {
+  html {
+    scroll-padding-top: 8rem;
+  }
   body {
     @apply bg-bg text-text font-sans font-light;
   }

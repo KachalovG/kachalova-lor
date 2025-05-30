@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <MainPage/>
+    <MainPage />
   </div>
 </template>
 
 <script setup>
-import './assets/App.css'
-import MainPage from './components/MainPage.vue'
+import "./assets/App.css";
+import MainPage from "./components/MainPage.vue";
 </script>

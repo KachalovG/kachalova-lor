@@ -18,10 +18,7 @@
     </div>
 
     <!-- Моб. меню -->
-    <nav
-      v-if="isOpen"
-      class="md:hidden bg-primary text-center space-y-2 py-4"
-    >
+    <nav v-if="isOpen" class="md:hidden bg-primary text-center space-y-2 py-4">
       <a href="#main" class="block hover:text-accent transition">Главная</a>
       <a href="#clinics" class="block hover:text-accent transition">Клиники</a>
       <a href="#about" class="block hover:text-accent transition">Обо мне</a>
@@ -30,6 +27,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 const isOpen = ref(false);
 </script>
