@@ -1,17 +1,14 @@
 <template>
-  <div
-    class="bg-surface border-l-4 border-primary rounded-xl p-6 shadow-md max-w-xs mx-auto transition-transform hover:-translate-y-1"
-  >
-    <h1 class="text-xl text-primary font-semibold mb-2">
+  <!-- Этот компонент теперь рисует ровно 1 карточку -->
+  <div class="bg-primary/30 rounded-2xl p-6 flex flex-col justify-between">
+    <h3 class="text-lg font-semibold text-primary mb-4">
       {{ title }}
-    </h1>
-    <p class="text-text-light mb-4">
+    </h3>
+    <p class="text-text-light mb-6 flex-grow">
       {{ description }}
     </p>
-    <a :href="link" target="_blank" class="inline-block">
-      <button
-        class="bg-primary text-surface px-6 py-2 rounded-md font-medium hover:bg-accent transition-colors"
-      >
+    <a :href="link" target="_blank">
+      <button class="bg-primary text-surface py-2 rounded-lg w-full">
         Записаться
       </button>
     </a>
@@ -19,18 +16,9 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  title: {
-    type: String,
-    default: "название клиники",
-  },
-  description: {
-    type: String,
-    default: "описание карточки",
-  },
-  link: {
-    type: String,
-    default: "ссылка",
-  },
+defineProps({
+  title: String,
+  description: String,
+  link: String,
 });
 </script>

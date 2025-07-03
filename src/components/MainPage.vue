@@ -8,23 +8,40 @@
     <!-- Главный экран -->
     <section id="main" class="flex-grow bg-bg pt-16 px-4">
       <div
-        class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8"
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-center gap-8"
       >
+        <!-- Левая колонка: фото -->
         <img
           :src="photo"
-          alt="author_photo"
-          class="w-64 md:w-96 object-contain rounded-lg shadow-lg"
+          alt="Доктор Качалова"
+          class="w-64 md:w-80 rounded-2xl shadow-lg object-cover"
         />
-        <ul class="space-y-2 text-text-light text-base md:text-lg">
-          <li>С любовью к профессии и заботой о каждом пациенте</li>
-          <li>Опыт более 8 лет в лечении взрослых и детей</li>
-          <li>
+
+        <!-- Правая колонка: подпись -->
+        <div class="text-center md:text-left space-y-4">
+          <!-- Имя -->
+          <h1
+            class="text-3xl md:text-4xl font-light text-primary leading-tight"
+          >
+            Качалова Евгения<br />
+            Владимировна
+          </h1>
+
+          <!-- Декоративная линия -->
+          <hr class="border-t border-text-light w-24 mx-auto md:mx-0" />
+
+          <!-- Описание -->
+          <p class="text-text-light leading-relaxed max-w-md mx-auto md:mx-0">
+            С любовью к профессии и заботой о каждом пациенте<br />
+            Опыт более 8 лет в лечении взрослых и детей<br />
             Вера в ценность человеческой жизни, помощь пациентам, этичное
-            отношение к людям
-          </li>
-        </ul>
+            отношение к людям.
+          </p>
+        </div>
       </div>
-      <div class="max-w-6xl mx-auto mb-8 mt-8">
+    </section>
+
+    <!-- <div class="max-w-6xl mx-auto mb-8 mt-8">
         <h2 class="text-2xl md:text-3xl font-semibold text-primary text-center">
           Почему я – ваш ЛОР-врач
         </h2>
@@ -56,7 +73,11 @@
           Для меня всегда важны гармония и баланс во взаимоотношениях между
           пациентом и врачом.
         </p>
-      </div>
+      </div> -->
+
+    <!-- Раздел "Обо мне" -->
+    <section id="about" class="bg-bg px-4 py-12">
+      <About />
     </section>
 
     <!-- Раздел клиник -->
@@ -85,11 +106,6 @@
           link="https://t.me/evgeniyakachalova"
         />
       </div>
-    </section>
-
-    <!-- Раздел "Обо мне" -->
-    <section id="about" class="bg-bg px-4 py-12">
-      <About />
     </section>
 
     <!-- Footer -->
