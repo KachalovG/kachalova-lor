@@ -97,7 +97,7 @@
         />
         <ClinicsPage
           title="Олимп Клиник Огни"
-          description="Разумная, основанная не доказательствах медицин с заботой о каждом члене семьи."
+          description="Доказательная медицина с заботой о каждом члене семьи"
           link="https://ogni.clinic/doctors/kachalova-evgeniya-vladimirovna?clckid=d45f28a2"
         />
         <ClinicsPage
