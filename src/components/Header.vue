@@ -17,8 +17,17 @@
       </button>
     </div>
 
-    <!-- Моб. меню -->
-    <nav v-if="isOpen" class="md:hidden bg-primary text-center space-y-2 py-4">
+    <div
+      v-if="isOpen"
+      @click="isOpen = false"
+      class="fixed inset-0 bg-black/50 md:hidden z-10"
+    ></div>
+
+    <!-- 2) Меню поверх оверлея -->
+    <nav
+      v-if="isOpen"
+      class="fixed inset-x-4 top-16 bg-primary text-center space-y-2 py-4 rounded-lg shadow-lg md:hidden z-20"
+    >
       <a href="#main" class="block hover:text-accent transition">Главная</a>
       <a href="#clinics" class="block hover:text-accent transition">Клиники</a>
       <a href="#about" class="block hover:text-accent transition">Обо мне</a>

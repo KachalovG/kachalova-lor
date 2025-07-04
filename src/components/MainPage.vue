@@ -21,7 +21,7 @@
         <div class="text-center md:text-left space-y-4">
           <!-- Имя -->
           <h1
-            class="text-3xl md:text-4xl font-light text-primary leading-tight"
+            class="font-heading text-3xl md:text-4xl font-light text-primary leading-tight"
           >
             Качалова Евгения<br />
             Владимировна
@@ -83,7 +83,7 @@
     <!-- Раздел клиник -->
     <section id="clinics" class="bg-bg px-4 py-12">
       <div class="max-w-6xl mx-auto mb-8">
-        <h2 class="text-2xl md:text-3xl font-semibold text-primary text-center">
+        <h2 class="font-heading text-3xl md:text-3xl text-primary text-center">
           Клиники
         </h2>
       </div>
@@ -92,17 +92,17 @@
       >
         <ClinicsPage
           title="Клиника Атмосфера"
-          description="Уютная клиника для всей семьи, где лечат профессионально, тепло и с уважением к каждому пациенту"
+          description="Уютная клиника для всей семьи, где лечат профессионально, тепло и с уважением к каждому пациенту."
           link="https://clck.ru/3L8yoT"
         />
         <ClinicsPage
           title="Олимп Клиник Огни"
-          description="Разумная доказательная медицина для всей семьи"
+          description="Разумная, основанная не доказательствах медицин с заботой о каждом члене семьи."
           link="https://ogni.clinic/doctors/kachalova-evgeniya-vladimirovna?clckid=d45f28a2"
         />
         <ClinicsPage
           title="Telegram"
-          description="Помогу записаться и отвечу на Ваши вопросы"
+          description="Помогу выбрать удобное время и отвечу на всё, что вас интересует."
           link="https://t.me/evgeniyakachalova"
         />
       </div>

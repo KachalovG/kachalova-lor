@@ -5,7 +5,7 @@
     >
       <!-- 1) Левая колонка: фото + текст -->
       <div
-        class="flex flex-col space-y-4 items-center md:items-start text-center md:text-left"
+        class="hidden md:flex flex-col space-y-4 items-center md:items-start text-center md:text-left"
       >
         <p class="text-text-light leading-relaxed">
           Я доктор, который точно не скажет: «Подумаешь, насморк, само
@@ -18,13 +18,13 @@
         <img
           :src="photo"
           alt="Доктор"
-          class="w-full h-auto rounded-2xl shadow-lg object-cover"
+          class="w-58 max-w-full h-auto rounded-2xl shadow-lg object-cover self-end"
         />
       </div>
 
       <!-- 2) Правая колонка: текст в зелёном блоке -->
       <div class="bg-primary/20 p-6 rounded-2xl space-y-4">
-        <h2 class="text-2xl font-medium text-primary">Обо мне</h2>
+        <h2 class="font-heading text-3xl font-medium text-primary">Обо мне</h2>
         <p
           class="border-l-4 border-primary pl-4 text-text-light leading-relaxed"
         >
@@ -69,9 +69,13 @@
       <div v-for="item in accordion" :key="item.key" class="space-y-4">
         <button
           @click="isOpen[item.key] = !isOpen[item.key]"
-          class="w-full flex justify-between items-center bg-primary/20 border border-gray-200 rounded-md px-4 py-3 text-left font-medium hover:bg-primary hover:text-surface transition-colors"
+          class="w-full flex justify-between items-center bg-primary/20 border border-gray-200 rounded-md px-4 py-3 text-left font-medium hover:bg-surface transition-colors"
         >
-          <span>{{ item.title }}</span>
+          <span
+            ><h3 class="font-heading text-2xl font-medium text-primary">
+              {{ item.title }}
+            </h3></span
+          >
           <span class="text-xl">{{ isOpen[item.key] ? "−" : ">" }}</span>
         </button>
 
@@ -92,7 +96,7 @@
 
 <script setup>
 import { reactive } from "vue";
-const photo = "…ваша ссылка…";
+import photo from "../assets/kachalova2.jpg";
 
 const accordion = [
   {

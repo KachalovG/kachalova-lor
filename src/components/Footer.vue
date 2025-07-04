@@ -4,7 +4,7 @@
       class="max-w-6xl mx-auto px-4 hidden md:flex flex-col md:flex-row justify-between gap-8"
     >
       <div class="space-y-4">
-        <h3 class="text-xl font-semibold">Контакты</h3>
+        <h3 class="font-heading text-2xl">Контакты</h3>
         <ul class="space-y-2 text-sm">
           <li>
             <a
@@ -28,7 +28,7 @@
       </div>
 
       <div class="space-y-4">
-        <h3 class="text-xl font-semibold">Связаться через</h3>
+        <h3 class="font-heading text-2xl">Связаться через</h3>
         <ul class="space-y-2 text-sm">
           <li>
             <a
