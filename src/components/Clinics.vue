@@ -6,8 +6,11 @@
     <h3 class="font-heading text-3xl text-primary mb-4">
       {{ title }}
     </h3>
-    <p class="text-text-light mb-6 flex-grow">
+    <p class="text-text-light mb-3 flex-grow">
       {{ description }}
+    </p>
+    <p class="text-text-light mb-3 flex-grow">
+      {{ adress }}
     </p>
     <a :href="link" target="_blank">
       <button
@@ -24,5 +27,6 @@ defineProps({
   title: String,
   description: String,
   link: String,
+  adress: String,
 });
 </script>

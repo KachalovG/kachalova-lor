@@ -93,11 +93,13 @@
         <ClinicsPage
           title="Клиника Атмосфера"
           description="Уютная клиника для всей семьи, где лечат профессионально, тепло и с уважением к каждому пациенту."
+          adress="Метро: Аминьевская, ул. Большая Очаковская д.2"
           link="https://clck.ru/3L8yoT"
         />
         <ClinicsPage
           title="Олимп Клиник Огни"
-          description="Доказательная медицина с заботой о каждом члене семьи"
+          description="Доказательная медицина с заботой о каждом члене семьи."
+          adress="Метро: Сокол/Аэропорт, Чапаевский переулок д.3"
           link="https://ogni.clinic/doctors/kachalova-evgeniya-vladimirovna?clckid=d45f28a2"
         />
         <ClinicsPage
