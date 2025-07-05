@@ -10,7 +10,9 @@
       {{ description }}
     </p>
     <a :href="link" target="_blank">
-      <button class="bg-primary text-surface py-2 rounded-lg w-full">
+      <button
+        class="bg-primary text-surface hover:bg-primary/50 py-2 rounded-lg w-full"
+      >
         Записаться
       </button>
     </a>

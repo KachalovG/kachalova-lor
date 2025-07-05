@@ -102,7 +102,7 @@
         />
         <ClinicsPage
           title="Telegram"
-          description="Помогу выбрать удобное время и отвечу на всё, что вас интересует."
+          description="Для связи и online консультаций"
           link="https://t.me/evgeniyakachalova"
         />
       </div>
