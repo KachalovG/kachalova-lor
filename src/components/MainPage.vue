@@ -94,7 +94,7 @@
           title="Клиника Атмосфера"
           description="Уютная клиника для всей семьи, где лечат профессионально, тепло и с уважением к каждому пациенту."
           adress="Метро: Аминьевская, ул. Большая Очаковская д.2"
-          link="https://clck.ru/3L8yoT"
+          link="https://atmosphere-clinic.ru/kachalova"
         />
         <ClinicsPage
           title="Олимп Клиник Огни"
