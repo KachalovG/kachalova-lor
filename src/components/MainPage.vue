@@ -111,7 +111,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-primary text-surface py-8">
+    <footer id="contacts" class="bg-primary text-surface py-8">
       <Footer />
     </footer>
   </div>

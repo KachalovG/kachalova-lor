@@ -28,7 +28,7 @@
       </div>
 
       <div class="space-y-4">
-        <h3 class="font-heading text-2xl">Связаться через</h3>
+        <h3 class="font-heading text-2xl">Для связи со мной</h3>
         <ul class="space-y-2 text-sm">
           <li>
             <a

@@ -1,11 +1,11 @@
 <template>
   <section id="about" class="bg-bg py-12 px-4">
     <div
-      class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8"
+      class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 items-stretch"
     >
       <!-- 1) Левая колонка: фото + текст -->
       <div
-        class="hidden md:flex flex-col space-y-4 items-center md:items-start text-center md:text-left"
+        class="hidden md:flex flex-col space-y-4 items-center md:items-start text-center md:text-left h-full"
       >
         <p class="text-text-light leading-relaxed">
           Я доктор, который точно не скажет: «Подумаешь, насморк, само
@@ -18,12 +18,12 @@
         <img
           :src="photo"
           alt="Доктор"
-          class="w-58 max-w-full h-auto rounded-2xl shadow-lg object-cover self-end"
+          class="w-auto max-w-full h-auto rounded-2xl shadow-lg self-end mt-auto"
         />
       </div>
 
       <!-- 2) Правая колонка: текст в зелёном блоке -->
-      <div class="bg-primary/20 p-6 rounded-2xl space-y-10 md:space-y-4">
+      <div class="bg-primary/20 p-6 rounded-2xl space-y-10 md:space-y-4 h-full">
         <h2 class="font-heading text-3xl font-medium text-primary">Обо мне</h2>
         <p
           class="border-l-4 border-primary pl-4 text-text-light leading-relaxed"
@@ -48,8 +48,8 @@
           class="border-l-4 border-primary pl-4 text-text-light leading-relaxed"
         >
           <a
-            >Про открытость. Мои пациенты должны понимать, что делает врач, как
-            он это делает и последовательность действий врача.</a
+            >Мои пациенты понимают, что делает врач, как он это делает и
+            последовательность действий.</a
           >
         </p>
 
